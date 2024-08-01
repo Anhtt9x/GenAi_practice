@@ -9,7 +9,8 @@ list_of_files = [
     "src/hepler.py",
     "src/run_local.py",
     "setup.py",
-    "main.py",
+    "main.py"
+    
 ]
 
 
