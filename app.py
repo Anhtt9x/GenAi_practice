@@ -40,10 +40,10 @@ qa = RetrievalQA.from_chain_type(llm=llm,
 def home():
     return render_template("index.html")
 
-@app.route("/get", methods=['GET', 'POST'])
+@app.route("/chatbot", methods=['GET', 'POST'])
 def chat():
     if request.method == 'POST':
-        input = request.form['msg']
+        input = request.form['question']
         print(input)
 
         result = qa.invoke({"query":input})
